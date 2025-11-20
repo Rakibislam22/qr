@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    padding: 30px;
+}
+
+#url {
+    padding: 8px;
+    width: 250px;
+}
+.btn:hover {
+    background-color: rgb(54, 130, 235);
+}
+.btn {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(52, 116, 235);
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+#QR {
+    margin: auto;
+    width: 250px;
+    padding: 20px;
+    padding-top: 50px;
+}
