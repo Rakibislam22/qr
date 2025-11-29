@@ -38,7 +38,7 @@ self.addEventListener("fetch", event => {
     event.respondWith(
         caches.match(event.request).then(response =>
             response ||
-            fetch(event.request).catch(() => caches.match("/qr-main/index.html"))
+            fetch(event.request).catch(() => caches.match("/qr/index.html"))
         )
     );
 });
