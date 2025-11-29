@@ -1,0 +1,25 @@
+{
+    "name": "QR Code Generator BD",
+    "short_name": "QR BD",
+    "description": "Free fast QR Code Generator for Bangladesh. Works offline and supports PNG/SVG downloads.",
+    "start_url": "/qr/?source=pwa",
+    "scope": "/qr/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f3f5f7",
+    "theme_color": "#2979ff",
+    "icons": [
+        {
+            "src": "qr-icon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "qr-icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -2,24 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR - Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
+    <title>QR Code Generator BD | Free Fast QR Maker Bangladesh</title>
+    <meta name="description"
+        content="Free QR Code Generator BD. Create fast QR codes for Bangladesh users. Download PNG, SVG, and use offline as PWA.">
+    <meta name="keywords" content="qr code bd, qr generator bangladesh, free qr code bd, qr maker bd">
+    <link rel="canonical" href="https://yourusername.github.io/qr-main/">
+
+    <meta property="og:title" content="QR Code Generator BD - Free QR Maker">
+    <meta property="og:description"
+        content="Fast free QR Code Generator for Bangladesh. Works offline and supports PNG/SVG download.">
+    <meta property="og:url" content="https://yourusername.github.io/qr-main/">
+    <meta property="og:type" content="website">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="qr.png" type="image/x-icon">
+
+    <!-- preserve theme early -->
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 </head>
 
 <body>
-    <h1>Generate your QR Code</h1>
-    <input oninput="handleChange()" id="url" type="url" placeholder="Paste url...">
-    <button onclick="handleQr()" class="btn">Generate</button>
+    <div class="page">
+        <header class="site-header">
+            <div class="brand">
+                <h1>QR Code Generator BD</h1>
+                <p class="tag">Fast • Simple • Free </p>
+            </div>
 
-    <div id="QR">
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+            </div>
+        </header>
 
+        <main class="main">
+            <div class="card">
+                <label for="url" class="sr-only">Enter URL or text</label>
+                <input id="url" oninput="handleChange()" type="text" placeholder="Enter URL or text..."
+                    autocomplete="off" />
+
+                <div class="controls-row">
+                    <button onclick="handleQr()" class="btn primary">Generate</button>
+                </div>
+
+                <div id="QR" class="qr-preview" aria-hidden="true"></div>
+
+                <div class="download-wrapper">
+                    <button id="downloadPng" class="btn outline">Download</button>
+                </div>
+            </div>
+
+            <aside class="seo-content">
+                <h2>QR Code Generator BD</h2>
+                <p>This is Bangladesh’s fastest QR Code Generator. Create QR codes online for links, Wi-Fi, text, phone
+                    numbers, and more. Supports PNG and offline PWA mode.</p>
+
+                <h3>Why Choose Our BD QR Generator?</h3>
+                <ul>
+                    <li>Lightning fast QR generation</li>
+                    <li>Supports PNG downloads</li>
+                    <li>Works offline (PWA)</li>
+                    <li>Dark mode with soft, eye-friendly colors</li>
+                    <li>No ads, no login and 100% free</li>
+                </ul>
+            </aside>
+        </main>
+
+        <!-- Info Footer -->
+        <footer class="footer">
+            <p>Developed with ❤️ by <strong>Rakib Islam</strong></p>
+            <p>
+                <a href="https://github.com/Rakibislam22" target="_blank">GitHub</a> •
+                <a href="https://facebook.com/rakibislam.KCN" target="_blank">Facebook</a>
+            </p>
+        </footer>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/qr-main/sw.js").catch(() => { });
+        }
+    </script>
 </body>
 
 </html>
