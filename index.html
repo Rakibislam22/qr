@@ -5,31 +5,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Search Console -->
     <meta name="google-site-verification" content="_31EmG7s3Ny4wQRejrI0tA0gnQomOpU2R9L_T2dL7bQ" />
 
+    <!-- SEO Title -->
     <title>QR Code Generator BD | Free Fast QR Maker Bangladesh</title>
-    <meta name="description"
-        content="Free QR Code Generator BD. Create fast QR codes for Bangladesh users. Download PNG, SVG, and use offline as PWA.">
-    <meta name="keywords" content="qr code bd, qr generator bangladesh, free qr code bd, qr maker bd">
-    <link rel="canonical" href="https://yourusername.github.io/qr-main/">
 
+    <!-- SEO Description -->
+    <meta name="description"
+        content="Free QR Code Generator BD. Create fast QR codes for Bangladesh users. Download PNG and use offline as PWA. No ads.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords"
+        content="qr code bd, qr bd, qr generator bangladesh, free qr code bd, qr maker bd, qr code generator bd">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rakibislam22.github.io/qr/">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="QR Code Generator BD - Free QR Maker">
     <meta property="og:description"
-        content="Fast free QR Code Generator for Bangladesh. Works offline and supports PNG/SVG download.">
-    <meta property="og:url" content="https://yourusername.github.io/qr-main/">
+        content="Fast free QR Code Generator for Bangladesh. PNG download and offline PWA mode supported.">
+    <meta property="og:url" content="https://rakibislam22.github.io/qr/">
     <meta property="og:type" content="website">
 
+    <!-- Manifest, Styles, Icon -->
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="qr.png" type="image/x-icon">
+    <link rel="icon" href="qr.png" type="image/png">
 
-    <!-- preserve theme early -->
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QR Code Generator BD",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Any",
+        "description": "Free and fast QR Code Generator for Bangladesh with PNG download and offline PWA.",
+        "url": "https://rakibislam22.github.io/qr/",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- Theme Persistence -->
     <script>
         if (localStorage.getItem("theme") === "dark") {
             document.documentElement.classList.add("dark");
         }
     </script>
 
+    <!-- QR Code Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 </head>
 
@@ -38,7 +68,7 @@
         <header class="site-header">
             <div class="brand">
                 <h1>QR Code Generator BD</h1>
-                <p class="tag">Fast • Simple • Free </p>
+                <p class="tag">Fast • Simple • Free</p>
             </div>
 
             <div class="header-actions">
@@ -48,7 +78,6 @@
 
         <main class="main">
             <div class="card">
-                <label for="url" class="sr-only">Enter URL or text</label>
                 <input id="url" oninput="handleChange()" type="text" placeholder="Enter URL or text..."
                     autocomplete="off" />
 
@@ -56,7 +85,7 @@
                     <button onclick="handleQr()" class="btn primary">Generate</button>
                 </div>
 
-                <div id="QR" class="qr-preview" aria-hidden="true"></div>
+                <div id="QR" class="qr-preview"></div>
 
                 <div class="download-wrapper">
                     <button id="downloadPng" class="btn outline">Download</button>
@@ -65,21 +94,19 @@
 
             <aside class="seo-content">
                 <h2>QR Code Generator BD</h2>
-                <p>This is Bangladesh’s fastest QR Code Generator. Create QR codes online for links, Wi-Fi, text, phone
-                    numbers, and more. Supports PNG and offline PWA mode.</p>
+                <p>Create QR codes instantly for links, Wi-Fi, text, phone numbers, and more. No ads. Works offline.</p>
 
-                <h3>Why Choose Our BD QR Generator?</h3>
+                <h3>Why Choose This BD QR Generator?</h3>
                 <ul>
-                    <li>Lightning fast QR generation</li>
-                    <li>Supports PNG downloads</li>
-                    <li>Works offline (PWA)</li>
-                    <li>Dark mode with soft, eye-friendly colors</li>
-                    <li>No ads, no login and 100% free</li>
+                    <li>Lightning fast QR creation</li>
+                    <li>Download as PNG</li>
+                    <li>Offline support (PWA)</li>
+                    <li>Dark mode (eye-friendly)</li>
+                    <li>100% free forever</li>
                 </ul>
             </aside>
         </main>
 
-        <!-- Info Footer -->
         <footer class="footer">
             <p>Developed with ❤️ by <strong>Rakib Islam</strong></p>
             <p>
